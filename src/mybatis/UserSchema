@@ -1,0 +1,16 @@
+// Oracle 
+
+SELECT * FROM tabs;
+
+
+CREATE TABLE users (
+	user_idx NUMBER NOT NULL PRIMARY KEY ,
+	name VARCHAR(20) NOT NULL , 
+	age NUMBER(3) NOT NULL , 
+	country VARCHAR(20) NOT NULL , 
+	birth CHAR(8) NOT NULL , 
+	create_date TIMESTAMP NOT NULL
+);
+
+insert into users values(1 , '최윤진' , 27 , '대한민국' , '19930925', SYSDATE);
+SELECT * FROM users;
